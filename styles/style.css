@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  background-color: #111827;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar,
+.nav-links,
+.nav-belt,
+.main,
+.landing-img-box,
+.greeting {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  height: 10vh;
+}
+
+.nav-belt {
+  width: 90%;
+  margin: auto;
+  justify-content: flex-end;
+}
+
+/* .nav-links {
+  justify-content: space-between;
+  width: 30%;
+} */
+
+.nav-links li a {
+  margin: 0 0.5rem;
+  padding: 0 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.nav-links li a:hover {
+  background-color: #6b6be1;
+}
+
+.main-section {
+  justify-content: center;
+  border: 2px solid black;
+  width: 100%;
+}
+
+.main {
+  justify-content: space-between;
+  /* min-width: fit-content; */
+  width: 80%;
+  min-height: 90vh;
+  margin: auto;
+  border: 2px solid white;
+}
+
+.landing-notation {
+  width: 40%;
+  min-width: fit-content;
+}
+
+.waving-hand {
+  width: 30px;
+  height: 30px;
+}
+
+.waving-hand-img {
+  width: 100%;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.role {
+  color: #bebe56;
+}
+
+.landing-img-box {
+  min-width: 400px;
+  width: 400px;
+  height: 400px;
+  /* max-width: 700px; */
+  align-self: flex-start;
+}
+
+.landing-img {
+  width: 100%;
+  height: 100%;
+}
+
+.projects-section {
+  /* border: 2px solid white; */
+  /* min-height: 100vh; */
+  padding: 1rem;
+  width: 90%;
+  margin: auto;
+}
+
+.section-heading {
+  border-bottom: 2px solid #0102ea;
+  margin: auto;
+  width: fit-content;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  flex-wrap: wrap;
+}
+
+.project-card-img {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .main {
+    flex-direction: column;
+  }
+  .main,
+  .name,
+  .role,
+  .greeting {
+    text-align: center;
+  }
+
+  .greeting {
+    justify-content: center;
+  }
+
+  .landing-img-box {
+    width: 200px;
+  }
+}
